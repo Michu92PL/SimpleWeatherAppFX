@@ -1,6 +1,7 @@
 package model;
 
 import org.apache.commons.io.IOUtils;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -31,7 +32,7 @@ public class WeatherService {
         try {
             jsonObject = new JSONObject(IOUtils.toString(new URL(url), Charset.forName("UTF-8")));
         } catch (IOException e) {
-            e.printStackTrace();
+            return weather;
         }
         weather.setIconURL(jsonObject.getJSONObject("current").getJSONObject("condition").get("icon").toString());
         weather.setText(jsonObject.getJSONObject("current").getJSONObject("condition").get("text").toString());
