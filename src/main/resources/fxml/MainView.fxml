@@ -5,18 +5,22 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="313.0" style="-fx-background-color: #B2FF66;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
    <children>
       <Label layoutX="18.0" layoutY="62.0" text="Wpisz nazwę miejscowości (po angielsku):" />
-      <Button fx:id="button" layoutX="121.0" layoutY="180.0" mnemonicParsing="false" onAction="#showWeather" text="Generuj" />
+      <Button fx:id="button" layoutX="121.0" layoutY="161.0" mnemonicParsing="false" onAction="#showWeather" style="-fx-background-color: #FFFF66; -fx-border-color: #000000;" text="Generuj" />
       <Label layoutX="103.0" layoutY="321.0" text="Opis:" />
       <Label layoutX="48.0" layoutY="359.0" text="Temperatura:" />
       <Label fx:id="textLabel" layoutX="180.0" layoutY="321.0" text="opis" />
       <Label fx:id="temperatureLabel" layoutX="180.0" layoutY="359.0" text="temp" />
-      <TextField fx:id="textField" layoutX="63.0" layoutY="113.0" />
-      <ImageView fx:id="imageView" fitHeight="43.0" fitWidth="47.0" layoutX="133.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true" />
-      <Label layoutX="81.0" layoutY="25.0" text="SIMPLE WEATHER APP" />
+      <TextField fx:id="textField" layoutX="63.0" layoutY="113.0" style="-fx-background-color: #FFFF66; -fx-border-color: #000000;" />
+      <ImageView fx:id="imageView" fitHeight="74.0" fitWidth="79.0" layoutX="117.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="81.0" layoutY="25.0" text="SIMPLE WEATHER APP">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
       <Label fx:id="nameLabel" layoutX="180.0" layoutY="279.0" text="miasto" />
       <Label layoutX="88.0" layoutY="279.0" text="Miasto:" />
    </children>
