@@ -26,6 +26,7 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.setTitle("S.W. App");
         primaryStage.getIcons().add(new Image(this.getClass().getResourceAsStream("/icon.png")));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 }
